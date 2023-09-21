@@ -27,5 +27,21 @@ int (*selector(char str))(va_list arg)
 	{
 		return (&bin_handler);
 	}
+	else if (str == 'u')
+	{
+		return (&uns_handler);
+	}
+	else if (str == 'o')
+	{
+		return (&oct_handler);
+	}
+	else if (str == 'x')
+	{
+		return (&hex_handler);
+	}
+	else if (str == 'X')
+	{
+		return (&hexa_handler);
+	}
 	return (0);
 }

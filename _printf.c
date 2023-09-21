@@ -47,6 +47,11 @@ int _printf(const char *format, ...)
 			{
 				output += selector(format[i])(args);
 			}
+			else if (format[i] == 'u' || format[i] == 'o' ||
+					format[i] == 'x' || format[i] == 'X')
+			{
+				output += selector(format[i])(args);
+			}
 			else
 			{
 				output += _putchar('%');

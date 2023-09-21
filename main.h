@@ -18,5 +18,10 @@ int str_handler(va_list arg);
 int int_handler(va_list arg);
 int bin_handler(va_list arg);
 int print_bin(unsigned int num);
+int uns_handler(va_list arg);
+int oct_handler(va_list arg);
+int hex_handler(va_list arg);
+int hexa_handler(va_list arg);
+int print_unsigned(unsigned int num, int base);
 
 #endif /* MAIN_H */
