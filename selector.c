@@ -23,5 +23,9 @@ int (*selector(char str))(va_list arg)
 	{
 		return (&int_handler);
 	}
+	else if (str == 'b')
+	{
+		return (&bin_handler);
+	}
 	return (0);
 }

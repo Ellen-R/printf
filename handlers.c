@@ -70,15 +70,15 @@ int int_handler(va_list arg)
 }
 /**
  * bin_handler - Handles binary integer format specifier.
- * @num: converts the number to binary
+ * @arg: converts the number to binary
  *
  * Return: The number of characters printed.
  */
-void bin_handler(unsigned int num)
+int bin_handler(va_list arg)
 {
-	if (num / 2 != 0)
-	{
-		bin_handler(num / 2);
-	}
-	_putchar(num % 2 + '0');
+	unsigned int num = va_arg(arg, unsigned int);
+	int count = 0;
+
+	count += print_bin(num);
+	return (count);
 }

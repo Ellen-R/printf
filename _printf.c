@@ -45,10 +45,7 @@ int _printf(const char *format, ...)
 			}
 			else if (format[i] == 'b')
 			{
-				unsigned int num = va_arg(args, unsigned int);
-
-				bin_handler(num);
-				output += sizeof(num) * 8;
+				output += selector(format[i])(args);
 			}
 			else
 			{
