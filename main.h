@@ -22,6 +22,6 @@ int uns_handler(va_list arg);
 int oct_handler(va_list arg);
 int hex_handler(va_list arg);
 int hexa_handler(va_list arg);
-int print_unsig(unsigned int num, int base);
+int print_unsig(unsigned int num, int base, int uppercase);
 
 #endif /* MAIN_H */

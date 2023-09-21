@@ -7,7 +7,7 @@
  * @base: The base (e.g., 10 for decimal, 8 for octal, 16 for hexadecimal).
  * Return: The number of characters printed.
  */
-int print_unsig(unsigned int num, int base)
+int print_unsig(unsigned int num, int base, int uppercase)
 {
 	int count = 0;
 	char buffer[32];

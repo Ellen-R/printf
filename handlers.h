@@ -11,7 +11,7 @@ int uns_handler(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int count = 0;
 
-	count += print_unsig(num, 10);
+	count += print_unsig(num, 10, 0);
 	return (count);
 }
 /**
@@ -25,7 +25,7 @@ int oct_handler(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int count = 0;
 
-	count += print_unsig(num, 8);
+	count += print_unsig(num, 8, 0);
 	return (count);
 }
 /**
@@ -39,7 +39,7 @@ int hex_handler(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int count = 0;
 
-	count += print_unsig(num, 16);
+	count += print_unsig(num, 16, 0);
 	return (count);
 }
 /**
@@ -53,7 +53,7 @@ int hexa_handler(va_list arg)
 	unsigned int num = va_arg(arg, unsigned int);
 	int count = 0;
 
-	count += print_unsig(num, 16);
+	count += print_unsig(num, 16, 1);
 	return (count);
 }
 
