@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_unsigned - Description for print_unsigned
+ * print_unsig - Description for print_unsigned
  * This function prints an unsigned integer.
  * @num: The unsigned integer to be printed.
  * @base: The base (e.g., 10 for decimal, 8 for octal, 16 for hexadecimal).
  * Return: The number of characters printed.
  */
-int print_unsigned(unsigned int num, int base)
+int print_unsig(unsigned int num, int base)
 {
 	int count = 0;
 	char buffer[32];
