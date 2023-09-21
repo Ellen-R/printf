@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 int (*selector(char str))(va_list arg);

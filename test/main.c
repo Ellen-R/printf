@@ -9,15 +9,22 @@
  */
 int main(void)
 {
-	int len1 = printf("I %s, I %d, if %c of %i no \n", "Sam", 16, 'c', 5);
-	int len2 = _printf("I %s, I %d, if %c of %i no \n", "Sam", 16, 'c', 5);
+	int len;
+	int len2;
 
-
-	/*
-	 * int len1 = printf("my name is %s and i am %d year old, i love %c\n",
-	 *         "Pascal", 16, 'c');
-	 * int len2 = _printf("my name is %s and i am %d year old, i love %c\n",
-	 *         "Pascal", 16, 'c');
-	 */
-	printf("%d = %d", len1, len2);
+	len = _printf("Let's try to printf a simple sentence.\n");
+	len2 = printf("Let's try to printf a simple sentence.\n");
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length:[%d, %i]\n", len2, len2);
+	_printf("Negative:[%d]\n", -762534);
+	printf("Negative:[%d]\n", -762534);
+	_printf("Character:[%c]\n", 'H');
+	printf("Character:[%c]\n", 'H');
+	_printf("String:[%s]\n", "I am a string !");
+	printf("String:[%s]\n", "I am a string !");
+	len = _printf("Percent:[%%]\n");
+	len2 = printf("Percent:[%%]\n");
+	_printf("Len:[%d]\n", len);
+	printf("Len:[%d]\n", len2);
+	return (0);
 }
