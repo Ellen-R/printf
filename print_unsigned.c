@@ -29,7 +29,14 @@ int print_unsig(unsigned int num, int base)
 		}
 		else
 		{
-			buffer[i] = digit - 10 + 'a';
+			if (uppercase)
+			{
+				buffer[i] = digit - 10 + 'A';
+			}
+			else
+			{
+				buffer[i] = digit - 10 + 'a';
+			}
 		}
 		num = num / base;
 		i++;
