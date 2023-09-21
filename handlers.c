@@ -68,3 +68,17 @@ int int_handler(va_list arg)
 
 	return (count);
 }
+/**
+ * bin_handler - Handles binary integer format specifier.
+ * @num: converts the number to binary
+ *
+ * Return: The number of characters printed.
+ */
+void bin_handler(unsigned int num)
+{
+	if (num / 2 != 0)
+	{
+		bin_handler(num / 2);
+	}
+	_putchar(num % 2 + '0');
+}

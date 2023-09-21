@@ -43,6 +43,13 @@ int _printf(const char *format, ...)
 			{
 				output += selector(format[i])(args);
 			}
+			else if (format[i] == 'b')
+			{
+				unsigned int num = va_arg(args, unsigned int);
+
+				bin_handler(num);
+				output += sizeof(num) * 8;
+			}
 			else
 			{
 				output += _putchar('%');

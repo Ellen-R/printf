@@ -16,5 +16,6 @@ int char_handler(va_list arg);
 int dec_handler(va_list arg);
 int str_handler(va_list arg);
 int int_handler(va_list arg);
+void bin_handler(unsigned int num);
 
 #endif /* MAIN_H */
